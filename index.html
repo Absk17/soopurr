@@ -728,12 +728,10 @@
       <h1>India's cat<br>parents deserve<br><em>better content</em></h1>
       <p>Every article recommends brands you can't buy here. Every vet guide was written for a different climate. MeowMail is built for Indian cats — and the people obsessed with them.</p>
 
-      <form class="signup-form" onsubmit="handleSubmit(event)">
-        <input type="text" placeholder="Your name" name="name" required>
-        <input type="email" placeholder="your@email.com" name="email" required>
-        <button type="submit" class="signup-btn">Get MeowMail free →</button>
+      <div class="signup-form">
+        <a href="https://abhisheks-newsletter-0bc9e2.beehiiv.com/subscribe" target="_blank" class="signup-btn" style="display:inline-block; text-decoration:none; text-align:center;">Get MeowMail free →</a>
         <p class="form-note">Weekly. No spam. Unsubscribe anytime.</p>
-      </form>
+      </div>
 
       <div class="subscriber-count">
         <div class="avatar-stack">
@@ -847,12 +845,9 @@
         <li>One thing from the internet worth your time</li>
       </ul>
 
-     <a href="https://abhisheks-newsletter-0bc9e2.beehiiv.com/subscribe" 
-   target="_blank" 
-   class="signup-btn" 
-   style="display:inline-block; text-decoration:none; text-align:center;">
-  Get MeowMail free →
-</a>
+      <div class="signup-form" style="max-width: 340px;">
+        <a href="https://abhisheks-newsletter-0bc9e2.beehiiv.com/subscribe" target="_blank" class="signup-btn" style="display:inline-block; text-decoration:none; text-align:center;">Subscribe — it's free</a>
+      </div>
     </div>
 
     <div class="newsletter-preview">
@@ -903,16 +898,7 @@
     <p class="footer-copy">© 2026 Soopurr. Made with love for Indian cats.</p>
   </footer>
 
-  <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('.signup-btn');
-      btn.textContent = 'You\'re in! 🐾';
-      btn.style.background = '#7A9E7E';
-      btn.disabled = true;
-      // Replace this with your actual Beehiiv/Mailchimp embed action URL
-    }
-  </script>
+
 
 </body>
 </html>
